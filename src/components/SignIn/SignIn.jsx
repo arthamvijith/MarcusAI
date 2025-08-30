@@ -49,7 +49,11 @@ const SignIn = ({ onSwitchToSignUp }) => {
         <a href="#" className="forgot">Forgot password?</a>
         <button type="submit" className="white-btn">Sign in</button>
       </form>
-      <div className="or">or</div>
+      <div className="or-divider">
+        <span className="line"></span>
+        <span className="or-text">or</span>
+        <span className="line"></span>
+      </div>
       <button 
         className="oauth-btn google" 
         onClick={() => handleOAuthClick('Google')}

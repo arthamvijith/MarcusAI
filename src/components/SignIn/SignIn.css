@@ -137,3 +137,22 @@ input:focus {
   text-decoration: underline;
   cursor: pointer;
 }
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background: #4f3c86;
+}
+
+.or-text {
+  margin: 0 16px;
+  color: #a79ee0;
+  font-size: 1rem;
+  font-weight: 500;
+}
