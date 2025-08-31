@@ -1,0 +1,27 @@
+.main-bg {
+  background: #f5f3fc;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-row {
+  display: flex;
+  gap: 64px;         /* Increased from 36px for wider space between boxes */
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+}
+
+.dashboard-content {
+  width: calc(2 * 560px + 64px); /* two panels, each 560px wide plus 64px gap */
+  margin: 0 auto;                /* perfectly centered horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

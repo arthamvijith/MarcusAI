@@ -26,11 +26,13 @@ h2 {
   color: #cdc7ff;
 }
 
-.desc {
-  color: #8e8cd1;
+.auth-content .desc {
+  color: #c4bdff;
   font-size: 1.1rem;
   margin-bottom: 18px;
+  text-align: center;
 }
+
 
 .oauth-btn {
  width: 100%;

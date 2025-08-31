@@ -1,0 +1,48 @@
+.input-area {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+/* This ensures the input and button don't overlap borders */
+.input-area input {
+  flex: 1;
+  padding: 14px 20px;
+  border: 2px solid #edeaf6;
+  border-radius: 12px 12px 12px 12px;
+  background: #f5f3fc;
+  color: #31235e;
+  font-size: 1.13rem;
+  outline: none;
+  transition: background 0.2s;
+  box-shadow: none;
+  border-right: none;        /* Remove border between input and button */
+}
+
+/* KEY PART FOR SPACING */
+.send-btn {
+  width: 56px;
+  height: 52px;
+  margin-left: 8px;  
+  margin-bottom: 5px;        /* <--- This adds visual space! */
+  background: #f5f3fc;
+  border: 2px solid #edeaf6;
+  border-radius: 12px;       /* Full round on all sides */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-left: 2px solid #edeaf6; /* A soft divider appearance */
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  background: #edeaf6;
+  outline: none;
+}
+
+.send-btn svg {
+  height: 24px;
+  width: 24px;
+}

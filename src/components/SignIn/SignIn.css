@@ -1,6 +1,22 @@
 .auth-content {
   width: 100%;
+  /* Align everything left for better error message placement */
+  text-align: left;
+}
+
+.auth-content h2 {
+  /* Keep header centered */
   text-align: center;
+}
+
+.auth-content p {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  color: red;
+  font-size: 0.9rem;
+  /* Align error text left under inputs */
+  text-align: left;
+  padding-left: 12px; /* Align padding with input padding */
 }
 
 .heart {
