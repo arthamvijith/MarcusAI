@@ -6,7 +6,7 @@ import MetricsPanel from '../MetricsPanel/MetricsPanel';
 import './MainContainer.css';
 
 const MainContainer = () => (
-  <div className="main-bg">
+<div className="main-bg">
   <Header />
   <div className="dashboard-content">
     <Roadmap />
@@ -16,6 +16,7 @@ const MainContainer = () => (
     </div>
   </div>
 </div>
+
 
 );
 

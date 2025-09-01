@@ -1,11 +1,12 @@
 .roadmap-bar {
-  width: 100%;            /* Stretches exactly the width of the parent (.dashboard-content), which equals two box widths plus the gap */
+  width: max-content;      /* Only as wide as needed for all steps/lines */
   display: flex;
   align-items: center;
   padding-bottom: 16px;
   margin-bottom: 14px;
-  padding-left: 0;         /* No extra padding */
-  margin-left: 0;          /* No arbitrary margin! */
+  padding-left: 0;
+  margin-left: auto;       /* Center horizontally */
+  margin-right: auto;      /* Center horizontally */
 }
 
 
