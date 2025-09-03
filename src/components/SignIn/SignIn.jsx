@@ -65,11 +65,20 @@ const SignIn = ({ onSwitchToSignUp }) => {
         <input
           type="password"
           placeholder="Enter your password"
-          {...register('password', { required: 'Password is required' })}
+          {...register('password', { required: 'Password is required' ,
+            minLength: {
+              value: 8,
+              message: 'Password must be at least 8 characters'
+            },
+            pattern: {
+              value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
+              message: 'Password must contain uppercase, lowercase, and number'
+            } })}
         />
         {errors.password && <p style={{ color: 'red' }}>{errors.password.message}</p>}
 
-        <a href="#" className="forgot">Forgot password?</a>
+        <a href="#" className="forgot" onClick={() => navigate('/forgot-password')}>Forgot password?</a>
+
         <button type="submit" className="white-btn">Sign in</button>
       </form>
 

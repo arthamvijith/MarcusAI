@@ -16,7 +16,7 @@
 
 .back-button {
   position: absolute;
-  left: 10;
+  left: 10px;    /* Add px units */
   background: none;
   border: none;
   cursor: pointer;
@@ -25,6 +25,7 @@
   align-items: center;
   justify-content: center;
 }
+
 
 .back-button svg {
   stroke: #31235e;
